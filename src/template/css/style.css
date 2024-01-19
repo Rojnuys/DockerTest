@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex-grow: 1;
+}
+
+.scroll-container {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.scroll-container-head {
+    position: sticky;
+    top: 0;
+}
+
+#histogram {
+    width: 100%;
+}
+
+.graphic-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.x-axis-label {
+    font-size: 10px;
+}
+
+@media (max-width: 1000px) {
+    .graphic-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

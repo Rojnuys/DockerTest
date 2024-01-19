@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  php-apache-rewrite:
+    image: php:8.3.1-apache-rewrite
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8080:80"
+  composer:
+    image: composer:2.6.4
+    command: install
+    volumes:
+      - ./src:/app

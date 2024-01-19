@@ -1,0 +1,7 @@
+{
+    "name": "rsv/analysis.local",
+    "type": "project",
+    "require": {
+        "markrogoyski/math-php": "^2.8"
+    }
+}
